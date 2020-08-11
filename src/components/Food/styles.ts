@@ -6,7 +6,13 @@ interface IFoodPlateProps {
 
 export const Container = styled.div<IFoodPlateProps>`
   background: #f0f0f5;
+
   border-radius: 8px;
+
+  transition: transform 0.5s;
+  &:hover {
+      transform: scale(1.03);
+    }
 
   header {
     background: #ffb84d;
@@ -30,14 +36,13 @@ export const Container = styled.div<IFoodPlateProps>`
 
   section.body {
     padding: 30px;
-
     h2 {
       color: #3d3d4d;
+
     }
 
     p {
       color: #3d3d4d;
-
       margin-top: 16px;
     }
 
@@ -72,6 +77,10 @@ export const Container = styled.div<IFoodPlateProps>`
         display: flex;
         border: none;
         transition: 0.1s;
+        transition: transform 0.5s;
+  &:hover {
+      transform: scale(1.06);
+    }
 
         svg {
           color: #3d3d4d;
@@ -97,6 +106,12 @@ export const Container = styled.div<IFoodPlateProps>`
         width: 88px;
         height: 32px;
         margin-left: 12px;
+        transition: transform 0.5s;
+
+       &:hover {
+        transform: translateX(-2px);
+
+    }
 
         & input {
           opacity: 0;
@@ -115,6 +130,8 @@ export const Container = styled.div<IFoodPlateProps>`
           -webkit-transition: 0.4s;
           transition: 0.4s;
           border-radius: 16px;
+
+
 
           &:before {
             position: absolute;

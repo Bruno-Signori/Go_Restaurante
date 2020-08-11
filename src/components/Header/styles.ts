@@ -12,6 +12,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+
+
     nav {
       div {
         button {
@@ -24,6 +26,12 @@ export const Container = styled.div`
           display: flex;
           flex-direction: row;
           align-items: center;
+
+          transition: transform 0.3s;
+    &:hover {
+      transform: translateX(10px);
+    }
+
 
           .text {
             padding: 16px 24px;
